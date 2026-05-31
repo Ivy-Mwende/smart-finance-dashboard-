@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard - Smart Finance</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f9f9f9; }
+    header { background: #007bff; color: #fff; padding: 15px; text-align: center; }
+    .container { display: flex; padding: 20px; }
+    .form-section, .summary-section, .chart-section {
+      flex: 1; margin: 10px; padding: 20px; background: #fff;
+      border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 { margin-top: 0; }
+    input, button {
+      width: 100%; padding: 10px; margin: 8px 0;
+      border: 1px solid #ccc; border-radius: 4px;
+    }
+    button { background: #007bff; color: #fff; border: none; cursor: pointer; }
+    button:hover { background: #0056b3; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Smart Finance Dashboard</h1>
+  </header>
+  <div class="container">
+    <div class="form-section">
+      <h2>Add Expense</h2>
+      <form>
+        <input type="text" placeholder="Expense Name" required>
+        <input type="number" placeholder="Amount" required>
+        <button type="submit">Add Expense</button>
+      </form>
+    </div>
+    <div class="form-section">
+      <h2>Add Income</h2>
+      <form>
+        <input type="text" placeholder="Income Source" required>
+        <input type="number" placeholder="Amount" required>
+        <button type="submit">Add Income</button>
+      </form>
+    </div>
+    <div class="chart-section">
+      <h2>Charts</h2>
+      <p>[Charts will appear here]</p>
+    </div>
+    <div class="summary-section">
+      <h2>Summary</h2>
+      <p>[Summary of expenses and income]</p>
+    </div>
+  </div>
+</body>
+</html>
